@@ -11,7 +11,7 @@ function footer() {
                         <li><a href='#home'>Home</a></li>
                         <li><a href='#products'>Products</a></li>
                         <li><a href='#ourServices'>Services</a></li>
-                        <li><a href='aboutUs'>About us</a></li>
+                        <li><a href='#aboutUs'>About us</a></li>
                     </ul>
                 </div>
                 <div className="box center">

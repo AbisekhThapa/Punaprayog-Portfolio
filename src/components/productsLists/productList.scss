@@ -1,6 +1,6 @@
 @import "../../App.scss";
 
-.products {
+.productsLists {
   margin: 0px 187px 100px 189px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -20,16 +20,16 @@
     width: 100%;
     flex-wrap: wrap;
     .search {
-      width: 100%;
+      width: 75%;
       margin-bottom: 82px;
-
+      border: solid;
+      border-radius: 25px;
+      border-color: #4741a6;
       input {
         width: 100%;
-        border: solid;
-        border-radius: 25px;
-        border-color: #4741a6;
         padding: 15px 20px;
         font-size: 20px;
+        background-color: transparent;
       }
     }
     .upwards {
@@ -43,20 +43,27 @@
         padding: 10px;
         .image {
           @include flexcol;
-          padding: 72px 0;
+          padding: 20px 0;
           background-color: #d9eff7;
+          border-radius: 20px;
           img {
             width: 220px;
             height: 139px;
           }
         }
         .content {
-          @include flexrow;
+          @include flexcol;
+          align-items: flex-start;
           width: 100%;
-          justify-content: space-around;
+          padding-top: 1rem;
+          h3 {
+            font-size: 30px;
+            text-transform: capitalize;
+            text-align: start;
+          }
           p {
-            margin: 10px 0;
-            font-size: 20px;
+            margin: 3px 0;
+            font-size: 1rem;
           }
         }
       }
@@ -66,7 +73,7 @@
 
 //For small devices
 @media screen and (max-width: 515px) {
-  .products {
+  .productsLists {
     margin-left: 20px;
     margin-right: 20px;
     height: auto;
@@ -77,6 +84,9 @@
     .mainBlock {
       .upwards {
         justify-content: center;
+        .content {
+          align-items: center;
+        }
       }
     }
   }
@@ -84,7 +94,7 @@
 
 //for medium devices
 @media screen and (max-width: 850px) {
-  .products {
+  .productsLists {
     margin-left: 20px;
     margin-right: 20px;
     height: auto;

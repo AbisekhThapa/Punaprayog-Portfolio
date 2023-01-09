@@ -25,10 +25,11 @@ const data = {
     products: [
         {
             id: 1,
-            name: 'Bed',
+            name: 'bed',
             category: 'furniture',
             image: './images/products/furniture.png',
-            price: '2000'
+            price: '2000',
+            description: 'king sied bed',
         },
     ]
 }
