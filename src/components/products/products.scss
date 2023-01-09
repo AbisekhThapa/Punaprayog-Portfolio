@@ -1,0 +1,83 @@
+@import "../../App.scss";
+
+.products {
+  margin: 0px 187px 100px 189px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include flexcol;
+
+  h1 {
+    text-transform: capitalize;
+    margin-bottom: 82px;
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainBlock {
+    @include flexcol;
+    width: 100%;
+    flex-wrap: wrap;
+    .upwards {
+      @include flexrow;
+      flex: 1 1;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      .insideBlock {
+        @include flexcol;
+        padding: 10px;
+        .image {
+          @include flexcol;
+          padding: 72px 0;
+          background-color: #d9eff7;
+          img {
+            width: 220px;
+            height: 139px;
+          }
+        }
+        .content {
+          @include flexrow;
+          width: 100%;
+          justify-content: space-around;
+          p {
+            margin: 10px 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//For small devices
+@media screen and (max-width: 515px) {
+  .products {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    h1 {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .mainBlock {
+      .upwards {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+//for medium devices
+@media screen and (max-width: 850px) {
+  .products {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

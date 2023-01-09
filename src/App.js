@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from './landingPage';
+import ProductsLists from './components/productsLists/ProductsLists.js';
+// import NoCategoryError from './components/NoCategoryError';
+import Footer from './components/footer/footer.js';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <Routes>
+          <Route exact path='/' element={<LandingPage />} />
+          <Route path='/:category' element={<ProductsLists />} />
+          {/* <Route element={<NoCategoryError />} /> */}
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 }
 
