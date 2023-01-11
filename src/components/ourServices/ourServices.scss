@@ -60,14 +60,13 @@
 }
 
 //medium screen
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
   .ourServices {
     .container {
       gap: 50px;
       @include flexcol;
       justify-self: start;
       .box {
-        max-width: 400px;
         min-width: 200px;
       }
     }

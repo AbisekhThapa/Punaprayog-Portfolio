@@ -3,22 +3,22 @@ const data = {
         {
             title: 'Furniture',
             slug: 'furniture',
-            image: './images/products/furniture.png',
+            image: './images/categories/furniture.png',
         },
         {
             title: 'Home Appliances',
             slug: 'home-appliances',
-            image: './images/products/furniture.png',
+            image: './images/categories/home-appliances.png',
         },
         {
             title: 'Electronics',
             slug: 'electronics',
-            image: './images/products/furniture.png',
+            image: './images/categories/electronics.png',
         },
         {
             title: 'Services',
             slug: 'services',
-            image: './images/products/furniture.png',
+            image: './images/categories/services.png',
         },
 
     ],
@@ -274,7 +274,7 @@ const data = {
         {
             id: 32,
             name: 'study table',
-            category: 'home-appliances',
+            category: 'furniture',
             image: './images/products/Sony-Television.jpg',
             price: '2000',
             description: '',
@@ -282,7 +282,7 @@ const data = {
         {
             id: 33,
             name: 'table and chair',
-            category: 'home-appliances',
+            category: 'furniture',
             image: './images/products/table-chair.jpg',
             price: '2000',
             description: '',
@@ -290,7 +290,7 @@ const data = {
         {
             id: 34,
             name: 'table',
-            category: 'home-appliances',
+            category: 'furniture',
             image: './images/products/table.jpg',
             price: '2000',
             description: '',
@@ -313,7 +313,7 @@ const data = {
         },
         {
             id: 37,
-            name: 'television',
+            name: 'whiteboard',
             category: 'home-appliances',
             image: './images/products/whiteboard.jpg',
             price: '2000',
