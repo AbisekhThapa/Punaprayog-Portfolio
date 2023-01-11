@@ -42,3 +42,6 @@ body {
   align-items: center;
   justify-content: center;
 }
+@mixin trans {
+  transition: border-width 2s ease 1s;
+}

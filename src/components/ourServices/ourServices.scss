@@ -21,10 +21,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 109px;
     .box {
-      min-width: 120px;
-      height: 365px;
+      width: 100%;
+      height: fit-content;
       box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
-      @include flexrow;
+      @include flexcol;
+      justify-content: flex-start;
+      padding: 10px 10px;
+      color: white;
+      .content {
+        @include flexcol;
+        padding-top: 50px;
+        gap: 10px;
+      }
     }
     .skycolor {
       background-color: #70bdbd;
@@ -42,8 +50,10 @@
 @media screen and (max-width: 400px) {
   .ourServices {
     .container {
+      padding: 0;
       .box {
-        min-width: 216px;
+        max-width: 400px;
+        min-width: 200px;
       }
     }
   }
@@ -57,7 +67,8 @@
       @include flexcol;
       justify-self: start;
       .box {
-        min-width: 282px;
+        max-width: 400px;
+        min-width: 200px;
       }
     }
   }

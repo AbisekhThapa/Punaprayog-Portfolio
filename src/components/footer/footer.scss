@@ -2,6 +2,7 @@
 
 .footer {
   width: 100%;
+
   .top {
     padding: 20px 187px 20px 189px;
     background: #9bbbfc;
@@ -11,9 +12,20 @@
     gap: 109px;
     .box {
       @include flexcol;
-      .left {
-        h1 {
-          font-size: 20px;
+    }
+    .left {
+      color: white;
+      h1 {
+        font-size: 20px;
+        color: white;
+      }
+      ul {
+        li {
+          a {
+            &:hover {
+              color: #4741a6;
+            }
+          }
         }
       }
     }

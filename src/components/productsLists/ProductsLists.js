@@ -6,7 +6,7 @@ import './productList.scss';
 function ProductsLists() {
     const { category } = useParams();
     const newcategory = category.replace("-", " ");
-    let newData = data.products.filter(product => product.category === category)
+    const newData = data.products.filter(product => product.category === category)
     const [search, setSearch] = useState('');
 
     return (
@@ -15,7 +15,7 @@ function ProductsLists() {
             <h1>{newcategory}</h1>
             <div className='mainBlock'>
                 <div className="search">
-                    <input className='search-input' type="text" placeholder='Search' onChange={(e) => setSearch(e.target.value.toLowerCase())} />
+                    <input className='search-input' type="text" placeholder='Search' onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())} />
                 </div>
                 <div className="upwards">
                     {newData.filter(user => user.name.includes(search)).map((filtered) => (
@@ -25,7 +25,8 @@ function ProductsLists() {
                                 <img src={filtered.image} alt={filtered.name} />
                             </div>
                             <div className="content">
-                                <h3>{filtered.name}</h3>
+
+                                <h3>{filtered.name.toUpperCase()}</h3>
                                 <p>{filtered.description}</p>
                                 <p>Rs.{filtered.price}</p>
                             </div>

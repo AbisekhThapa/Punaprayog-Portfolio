@@ -1,0 +1,69 @@
+.home {
+  align-items: center;
+  display: grid;
+  margin-top: 75px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: px;
+
+  border: 5px solid;
+  border-radius: 500px;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-color: #9bbbfc;
+  border-collapse: separate;
+  border-spacing: 15px;
+
+  padding-top: 70px;
+  padding-bottom: 30px;
+
+  background-color: #9bbbfc;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.home p {
+  font-size: 60px;
+  width: 70%;
+  line-height: 170%;
+  color: white;
+}
+
+.socialmedia ul {
+  display: flex;
+  width: 280%;
+  font-size: 30px;
+  line-break: 20px;
+  padding-top: 8%;
+}
+
+@media (max-width: 1035px) {
+  .home p {
+    font-size: auto;
+    line-height: 100px;
+  }
+  .socialmedia ul {
+    display: flex;
+    width: 250%;
+    font-size: 20px;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 520px) {
+  .home {
+    border-top-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+  }
+  .home p {
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  .socialmedia ul {
+    display: flex;
+    width: 50px;
+    font-size: 10px;
+
+    padding-top: 8px;
+  }
+}

@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 .products {
-  margin: 0px 187px 100px 189px;
+  margin: 100px 187px 100px 189px;
   padding-top: 10px;
   padding-bottom: 10px;
   @include flexcol;
@@ -21,29 +21,45 @@
     flex-wrap: wrap;
     .upwards {
       @include flexrow;
+
+      @include trans;
       flex: 1 1;
       flex-wrap: wrap;
       width: 100%;
       justify-content: space-between;
-      .insideBlock {
-        @include flexcol;
-        padding: 10px;
-        .image {
-          @include flexcol;
-          padding: 72px 0;
-          background-color: #d9eff7;
-          img {
-            width: 220px;
-            height: 139px;
-          }
+      a {
+        &:hover {
+          color: #4741a6;
         }
-        .content {
-          @include flexrow;
-          width: 100%;
-          justify-content: space-around;
-          p {
-            margin: 10px 0;
-            font-size: 20px;
+        .insideBlock {
+          @include flexcol;
+          border-style: solid;
+          border-width: 2px;
+          border-color: rgb(177, 177, 177);
+          border-radius: 15px;
+          box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+          &:hover {
+            border-width: 3px;
+            border-color: #4741a6;
+          }
+          .image {
+            @include flexcol;
+            padding: 72px 0;
+            border-radius: 15px;
+            background-color: #d9eff7;
+            img {
+              width: 200px;
+              height: 139px;
+            }
+          }
+          .content {
+            @include flexrow;
+            width: 100%;
+            justify-content: space-around;
+            p {
+              margin: 10px 0;
+              font-size: 20px;
+            }
           }
         }
       }
@@ -52,7 +68,7 @@
 }
 
 //For small devices
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 600px) {
   .products {
     margin-left: 20px;
     margin-right: 20px;
@@ -70,7 +86,7 @@
 }
 
 //for medium devices
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .products {
     margin-left: 20px;
     margin-right: 20px;
@@ -78,6 +94,13 @@
     h1 {
       display: flex;
       justify-content: center;
+    }
+    .mainBlock {
+      .upwards {
+        a {
+          padding: 10px;
+        }
+      }
     }
   }
 }

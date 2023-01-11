@@ -6,7 +6,7 @@ function footer() {
         <div className='footer'>
             <div className="top">
                 <div className="box left">
-                    <h1>Purnaprayog</h1>
+                    <h1>Punaprayog</h1>
                     <ul>
                         <li><a href='#home'>Home</a></li>
                         <li><a href='#products'>Products</a></li>
