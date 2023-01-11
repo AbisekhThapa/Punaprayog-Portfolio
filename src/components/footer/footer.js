@@ -1,5 +1,7 @@
 import React from 'react'
 import './footer.scss';
+import { CiFacebook, CiYoutube } from 'react-icons/ci'
+import { RiMessengerLine } from 'react-icons/ri'
 
 function footer() {
     return (
@@ -21,7 +23,11 @@ function footer() {
                 </div>
                 <div className="box right">
                     <p>available at</p>
-                    <p><b>facebook , </b></p>
+                    <div class="icons">
+                        <CiFacebook size={40} />
+                        <RiMessengerLine size={40} />
+                        <CiYoutube size={40} />
+                    </div>
                 </div>
             </div>
             <div className="down">

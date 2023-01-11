@@ -29,6 +29,12 @@
         }
       }
     }
+    .right {
+      .icons {
+        @include flexrow;
+        gap: 15px;
+      }
+    }
   }
   .down {
     background-color: #4741a6;
