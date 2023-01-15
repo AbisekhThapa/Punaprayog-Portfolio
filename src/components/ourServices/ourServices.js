@@ -23,9 +23,8 @@ function ourServices() {
                     <RiTakeawayLine size={50} color='black' />
                     <div class="content">
                         <h2>We Sell</h2>
-                        <p>We buy any types of your
-                            products.If you want to migrate to your new houses we are here for you
-                            to buy products that are no use to you but can be usefull to others</p>
+                        <p>We sell all kinds of products for your house, hotels and offices.If you
+                            want products in high quantity in reasonable price then this is best place for you</p>
                         <h3> contact:</h3>
                     </div>
                 </div>
@@ -33,9 +32,7 @@ function ourServices() {
                     <GrServices size={50} />
                     <div class="content">
                         <h2>Service</h2>
-                        <p>We buy any types of your
-                            products.If you want to migrate to your new houses we are here for you
-                            to buy products that are no use to you but can be usefull to others</p>
+                        <p>We also provide repairing services of electronics products like television , mobile, laptops etc.</p>
                         <h3> contact:</h3>
                     </div>
                 </div>

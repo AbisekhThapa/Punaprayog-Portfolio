@@ -14,13 +14,13 @@ function Navbar() {
             <div className={showMediaIcons ? " mobile-link" : "links"}>
                 <ul>
                     <li>
-                        <a href='/'>Home</a>
+                        <a href='/#home'>Home</a>
                     </li>
                     <li>
-                        <a href='/'>Products</a>
+                        <a href='/#products'>Products</a>
                     </li>
                     <li>
-                        <a href='/'>Services</a>
+                        <a href='/#ourServices'>Services</a>
                     </li>
                     <li>
                         <a href='/'>AboutUs</a>
