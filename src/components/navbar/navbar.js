@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+
+import React, { useState } from 'react'
 import './navbar.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-export default function Navbar() {
+function Navbar() {
     const [showMediaIcons, setshowMediaIcons] = useState(false);
     return (
         <nav className="navbar">
@@ -34,5 +35,7 @@ export default function Navbar() {
                 </a>
             </div>
         </nav>
-    );
-};
+    )
+}
+
+export default Navbar

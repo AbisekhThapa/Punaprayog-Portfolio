@@ -1,7 +1,7 @@
 import './home.scss'
 import { FaFacebook, FaYoutube, FaFacebookMessenger } from "react-icons/fa";
 
-function home() {
+function Home() {
     return (
         <div className="home">
             <p>BUY ANYTHING</p>
@@ -31,4 +31,4 @@ function home() {
     )
 }
 
-export default home
+export default Home

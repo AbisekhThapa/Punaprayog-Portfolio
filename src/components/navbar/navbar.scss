@@ -1,11 +1,6 @@
 .navbar {
-  padding: auto;
-  max-width: auto;
   border-bottom: 1px solid #f2f2f2;
   font-family: "Poppins", sans-serif;
-}
-
-.navbar {
   width: 100%;
   height: 85.71px;
   display: grid;
@@ -16,6 +11,7 @@
   display: flex;
   margin-left: 187px;
   font-size: 20px;
+  align-items: center;
   h1 {
     color: #4741a6;
   }
@@ -25,6 +21,16 @@
   grid-column: 3/4;
 }
 .links ul {
+  font-size: 12px;
+  height: 85.71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-link {
+  grid-column: 3/4;
+}
+.mobile-link ul {
   font-size: 12px;
   height: 85.71px;
   display: flex;
@@ -60,8 +66,6 @@
   .mobile-link {
     position: relative;
     align-items: center;
-  }
-  .mobile-link {
     background-color: white;
     height: 20rem;
     display: grid;
@@ -70,7 +74,7 @@
     transform-origin: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    width: 1020px;
+    width: 1035px;
   }
 
   .mobile-link ul {
@@ -78,12 +82,12 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
   .hamburger-menu {
     display: flex;
-    font-size: 2.5rem;
-    position: fixed;
+    font-size: 30px;
+    position: absolute;
     right: 0;
     align-self: center;
   }
@@ -96,16 +100,17 @@
     .logo {
       height: 6rem;
       margin-left: 150px;
+      align-items: center;
     }
     .hamburger-menu {
       display: flex;
-      font-size: 2.5rem;
-      position: fixed;
+      font-size: 30px;
+      position: absolute;
       align-self: center;
     }
     .mobile-link {
       margin-left: 1px;
-      width: 519px;
+      width: 510px;
     }
   }
 }
