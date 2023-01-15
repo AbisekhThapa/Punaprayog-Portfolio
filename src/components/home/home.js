@@ -3,7 +3,7 @@ import { FaFacebook, FaYoutube, FaFacebookMessenger } from "react-icons/fa";
 
 function Home() {
     return (
-        <div className="home">
+        <div className="home" id='home'>
             <p>BUY ANYTHING</p>
             <p>AND</p>
             <p>SELL EVERYTHING</p>
