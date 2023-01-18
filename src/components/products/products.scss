@@ -27,7 +27,7 @@
       flex-wrap: wrap;
       width: 100%;
       justify-content: space-between;
-      a {
+      .a {
         &:hover {
           color: #4741a6;
         }
@@ -97,7 +97,7 @@
     }
     .mainBlock {
       .upwards {
-        a {
+        .a {
           padding: 10px;
         }
       }

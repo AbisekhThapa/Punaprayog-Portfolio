@@ -1,4 +1,5 @@
 import './products.scss'
+import { Link } from 'react-router-dom'
 
 function products({ data }) {
     return (
@@ -7,7 +8,7 @@ function products({ data }) {
             <div className='mainBlock'>
                 <div className="upwards">
                     {data.categories.map((category) => (
-                        <a href={category.slug} key={category.slug}>
+                        <Link className="a" to={category.slug} key={category.slug}>
                             <div className="insideBlock">
                                 <div className="image">
                                     <img src={category.image} alt={category.title} />
@@ -16,7 +17,7 @@ function products({ data }) {
                                     <p>{category.title}</p>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>
