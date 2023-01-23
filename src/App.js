@@ -12,7 +12,7 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<LandingPage />} />
           <Route path='/:category' element={<ProductsLists />} />
-          <Route element={<NoCategoryError />} />
+          <Route path='/services' element={<NoCategoryError />} />
         </Routes>
       </div>
     </>

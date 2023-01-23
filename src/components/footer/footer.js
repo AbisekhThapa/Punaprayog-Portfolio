@@ -24,8 +24,8 @@ function footer() {
                 <div className="box right">
                     <p>available at</p>
                     <div class="icons">
-                        <CiFacebook size={40} />
-                        <RiMessengerLine size={40} />
+                        <a href='https://www.facebook.com/netrc.netrc.9'><CiFacebook size={40} /></a>
+                        <a href="https://www.facebook.com/messages/t/100039307923674"><RiMessengerLine size={40} /></a>
                         <CiYoutube size={40} />
                     </div>
                 </div>
@@ -33,7 +33,7 @@ function footer() {
             <div className="down">
                 <h5>© 2022 | All rights reserved</h5>
             </div>
-        </div>
+        </div >
     )
 }
 

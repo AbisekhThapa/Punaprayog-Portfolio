@@ -28,7 +28,7 @@ function ProductsLists() {
 
                                 <h3>{filtered.name.toUpperCase()}</h3>
                                 <p>{filtered.description}</p>
-                                <p>Rs.{filtered.price}</p>
+                                {/* <p>Rs.{filtered.price}</p> */}
                             </div>
                         </div>
 
